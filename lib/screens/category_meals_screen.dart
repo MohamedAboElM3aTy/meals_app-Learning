@@ -27,6 +27,7 @@ class CategoryMealScreen extends StatelessWidget {
         itemCount: categoryMeal.length,
         itemBuilder: (ctx, index) {
           return MealItem(
+            id: categoryMeal[index].id,
             title: categoryMeal[index].title,
             imageUrl: categoryMeal[index].imageUrl,
             duration: categoryMeal[index].duration,
@@ -36,5 +37,5 @@ class CategoryMealScreen extends StatelessWidget {
         },
       ),
     );
-  } 
+  }
 }
