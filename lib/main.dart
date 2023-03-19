@@ -23,6 +23,10 @@ class MyApp extends StatelessWidget {
           titleMedium: TextStyle(
             color: Color.fromRGBO(20, 51, 51, 1),
           ),
+          bodyLarge: TextStyle(
+            fontSize: 22,
+            fontFamily: 'RobotoCondensed-Bold',
+          ),
         ),
   );
 
@@ -40,6 +44,11 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => CategoriesScreen(),
         CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+      },
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (ctx) => CategoriesScreen(),
+        );
       },
     );
   }
