@@ -124,18 +124,14 @@ class MealItem extends StatelessWidget {
                     children: [
                       Icon(Icons.work),
                       SizedBox(width: 6),
-                      Text(
-                        complexityText,
-                      ),
+                      Text(complexityText),
                     ],
                   ),
                   Row(
                     children: [
                       Icon(Icons.attach_money),
                       SizedBox(width: 6),
-                      Text(
-                        affordabilityText,
-                      ),
+                      Text(affordabilityText),
                     ],
                   ),
                 ],
